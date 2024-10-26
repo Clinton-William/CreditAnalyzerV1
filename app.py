@@ -378,7 +378,7 @@ def render_header():
 def render_sidebar():
     """Render the sidebar content"""
     with st.sidebar:
-        st.image("https://via.placeholder.com/150?text=Logo", use_column_width=True)
+        st.image("assets/risk-insights-logo.svg", use_column_width=True)
         st.title("Bankruptcy Risk Analysis")
         
         with st.expander("About Altman Z-Score", expanded=True):
