@@ -120,11 +120,50 @@ def render_login_page():
                 width: 120px;
                 height: auto;
             }
+
+            /* Demo Credentials Box */
+            .demo-box {
+                background: rgba(59, 130, 246, 0.1);
+                border: 1px solid rgba(59, 130, 246, 0.2);
+                border-radius: 8px;
+                padding: 1rem;
+                margin-top: 1rem;
+            }
+            
+            .demo-box h4 {
+                color: #60A5FA;
+                margin: 0 0 0.5rem 0;
+                font-size: 0.9rem;
+            }
+            
+            .demo-credentials {
+                color: #9CA3AF;
+                font-size: 0.8rem;
+                margin: 0.25rem 0;
+            }
         </style>
     """, unsafe_allow_html=True)
     
     # Login form
     col1, col2, col3 = st.columns([1,2,1])
+
+    with col1:
+        st.markdown("""
+            <div class="demo-box">
+                <h4>Demo Credentials</h4>
+                <p class="demo-credentials">
+                    <strong>Demo User:</strong><br>
+                    Email: demo@example.com<br>
+                    Password: demo123
+                </p>
+                <p class="demo-credentials">
+                    <strong>Admin User:</strong><br>
+                    Email: admin@example.com<br>
+                    Password: admin123
+                </p>
+            </div>
+        """, unsafe_allow_html=True)
+        
     with col2:
         st.markdown("""
             <div class="login-container">
