@@ -156,11 +156,6 @@ def render_login_page():
                     Email: demo@example.com<br>
                     Password: demo123
                 </p>
-                <p class="demo-credentials">
-                    <strong>Admin User:</strong><br>
-                    Email: admin@example.com<br>
-                    Password: admin123
-                </p>
             </div>
         """, unsafe_allow_html=True)
         
